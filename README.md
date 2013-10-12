@@ -21,4 +21,4 @@ ToDo:
     - lines of code written, deleted, modified
 
 
-Remember: **Code Responsibly**
+
