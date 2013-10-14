@@ -1,12 +1,5 @@
 #!/Library/Frameworks/Python.framework/Versions/2.7/bin/python
 ################################################################################
-# showdata.py
-#
-# Display analog data from Arduino using Python (matplotlib)
-# 
-# electronut.in
-#
-################################################################################
 
 import subprocess
 import sys, serial
