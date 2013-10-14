@@ -5,8 +5,9 @@ Based on Electronut's work with arduino and matplotlib, but focusing on making p
 
 
 What it looks like:
-![Screenshot](Screen Shot 2013-10-14 at 1.51.13 PM.png)
-
+<p align="center">
+<img src="Screen Shot 2013-10-14 at 1.51.13 PM.png">
+</p>
 
 ### Installation
 
