@@ -1,15 +1,14 @@
 CodeCraft
 =========
 
-Based on Electronut's work with arduino and matplotlib, but focusing on making programming feel more like rts.
-
+Based on [electronut](https://github.com/electronut) and [dannvix's](https://github.com/dannvix) work with python and logging respectively.
 
 What it looks like:
 <p align="center">
 <img src="Screen Shot 2013-10-14 at 1.51.13 PM.png">
 </p>
 
-### Installation
+## Installation
 
 How to run it:
 
