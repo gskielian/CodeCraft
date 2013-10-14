@@ -20,5 +20,12 @@ sudo python APM.py starwars
 
 
 References
------------
-Based on [electronut](https://github.com/electronut) and [dannvix's](https://github.com/dannvix) work with python and logging respectively.
+----------
+Python code is loosely based on [this gist](https://gist.github.com/electronut/5730160) by [electronut](https://github.com/electronut)
+
+eventlog is based on work by[dannvix's](https://github.com/dannvix) 
+
+Mods to keylogger-osx
+=====================
+ - Removed the part where it logs the actual keys -- as we only need to count the number of **keypress-events**.
+ + records the seconds since Unix epoch
