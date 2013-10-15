@@ -18,12 +18,13 @@ sudo ./eventlog &
 sudo python APM.py starwars
 ```
 
+Note: In place of **starwars** feel free to place any figfont that can display numbers.
 
 References
 ----------
 Python code is loosely based on [this gist](https://gist.github.com/electronut/5730160) by [electronut](https://github.com/electronut)
 
-eventlog is based on work by[dannvix's](https://github.com/dannvix) 
+eventlog is based on work by [dannvix](https://github.com/dannvix) 
 
 Mods to keylogger-osx
 =====================
