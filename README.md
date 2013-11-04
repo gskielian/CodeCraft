@@ -20,6 +20,8 @@ sudo python APM.py starwars
 
 Note: In place of **starwars** feel free to place any figfont that can display numbers.
 
+## Find FigFonts Here:
+
 Here is a particularly cool link for shopping for a good font -- beware that not every figfont can display numbers (why not numbers? yeah I know weird...)
 
 http://www.jave.de/figlet/fonts/overview.html
