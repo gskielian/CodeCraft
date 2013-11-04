@@ -32,8 +32,9 @@ def main():
       apm = aList[0] - aList[599]
       subprocess.call("figlet -f " + str(sys.argv[1]) +  " APT = "  + str(vel_lines/10)  + '; figlet -f ' + str(sys.argv[1]) +  ' \"APM = ' + str(apm) + '\" ', shell=True)
       sleep(0.1)
-      subprocess.call(' echo  \"' + str(vel_lines/10) + ', ' + str(apm) + ',  `date +%s`\" >> time.dat', shell=True)
-      subprocess.call("clear",shell=True) 
+      if str(sys.argv[2]) == "record":
+        subprocess.call(' echo  \"' + str(vel_lines/10) + ', ' + str(apm) + ',  `date +%s`\" >> time.dat', shell=True)
+        #subprocess.call("clear",shell=True) 
     except KeyboardInterrupt:
       print 'exiting'
       break
