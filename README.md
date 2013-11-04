@@ -1,19 +1,16 @@
-keylogger-osx
-=============
-
-<<<<<<< HEAD
-This is a very simple keylogger for self-quantifying. The source code is awfully dirty, but it works for me and that's enough.
+Purpose
 =======
-Based on [electronut](https://github.com/electronut) and [dannvix's](https://github.com/dannvix) work with python and logging respectively.
 
-What it looks like:
+I really wanted an RTS style log of how many keystrokes per minute I was entering for the lulz.
+
+
+
+## What it looks like:
 <p align="center">
 <img src="Screen Shot 2013-10-14 at 1.51.13 PM.png">
 </p>
 
-## Installation
-
-How to run it:
+## Installation && How to Run
 
 ```bash
 make
@@ -21,35 +18,15 @@ sudo ./eventlog &
 sudo python APM.py starwars
 ```
 
->>>>>>> 9842f373a87c01b0f719ab2ce4e59c5488fb0b01
+Note: In place of **starwars** feel free to place any figfont that can display numbers.
 
-
-Disclaimer
+References
 ----------
-**Please do not ever take this project for any evil purpose.**
+Python code is loosely based on [this gist](https://gist.github.com/electronut/5730160) by [electronut](https://github.com/electronut)
 
+eventlog is based on work by [dannvix](https://github.com/dannvix) 
 
-Story
------
-My friend and I were discussing about the [Carpal Tunnel Syndrome](http://en.wikipedia.org/wiki/Carpal_tunnel_syndrome). He asked how many keystrokes I perform everyday, and I totally had no idea. However, keystrokes are highly sensitive information and I don't trust those softwares in the wild.
-
-Being a programmer, simply write one by myself. That's it. 
-
-
-Usage
------
-Build the code and deploy it to `/usr/local/sbin/`. Then drop the Launchd script to `/System/Library/LaunchDaemons` to fire up this keylogger on startup. By default, the keystrokes would be logged in `/var/log/keystroke.log`. You may need root priviledge when writting to `/var/log/`.
-
-Remember to check *Enable access for assitive devices* in the *Universal Access* preferences panel.
-
-
-License
--------
-Copyright (c) 2012 Shao-Chung Chen
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- 
+Mods to keylogger-osx
+=====================
+ - Removed the part where it logs the actual keys -- as we only need to count the number of **keypress-events**.
+ + records the seconds since Unix epoch
