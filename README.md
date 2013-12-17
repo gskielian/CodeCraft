@@ -37,3 +37,7 @@ Mods to keylogger-osx
 =====================
  - Removed the part where it logs the actual keys -- as we only need to count the number of **keypress-events**.
  + records the seconds since Unix epoch
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/gskielian/codecraft/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
